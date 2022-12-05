@@ -4,9 +4,7 @@ import {TaskType, TodoList} from "./TodoList";
 import {v1} from "uuid";
 
 export type FilterValuesType = "all" | "completed" | "active"
-
 function App() {
-
     let [tasks1, setTasks1] = useState<Array<TaskType>>([
         {id: v1(), title: 'CSS', isDone: true},
         {id: v1(), title: 'HTML', isDone: true},
@@ -50,11 +48,8 @@ function App() {
                       addTask={addTask}
                       changeStatus={changeStatus}
                       filter={filter}
-
             />
         </div>
-
     );
 }
-
 export default App;
